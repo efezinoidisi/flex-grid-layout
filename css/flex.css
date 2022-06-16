@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    width: auto;
+    padding: 1vh;
+    font-size: 15px;
+}
+
+.layout-link {
+    width: 10%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.layout-link a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.wrap {
+    width: 90%;
+    height: auto;
+    display: flex;
+}
+
+.boxes {
+    width: 70%;
+    height: 800px;
+    padding: 40px 70px 60px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.boxes:first-child {
+    border: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.boxes:last-child {
+    border: none;
+    border-radius: 0 8px 8px 0;
+}
+
+.boxes img {
+    width: 30%;
+}
+
+.boxes h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 3em;
+    margin: 60px 0 20px;
+}
+
+.boxes p {
+    font-size: 1.4em;
+    line-height: 40px;
+    margin: 10px 0 30px;
+    padding: 60px 0;
+}
+
+#sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.boxes button {
+    width: 60%;
+    border: none;
+    border-radius: 30px;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    padding: 20px;
+    cursor: pointer;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.boxes button:hover {
+    border: 3px solid hsla(0, 0%, 100%, 0.75);
+    background-color: inherit;
+}
+
+#sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+#suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+#sedan button:hover,
+#suv button:hover,
+#luxury button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media screen and (max-width:1100px) and (min-width:600px) {
+
+    body {
+        margin: 0;
+        padding: 4vh;
+    }
+
+    main {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        width: 100%;
+    }
+
+    .boxes {
+        padding: 10px;
+    }
+
+    .boxes p {
+        margin: 20px 0 10px;
+        padding: 40px 0;
+    }
+
+    .boxes button {
+        width: 80%;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+
+    .layout-link {
+        width: 40%;
+        padding: 15px;
+    }
+
+    .wrap {
+        display: block;
+        width: 100%;
+    }
+
+    .boxes {
+        width: 100%;
+    }
+
+    .boxes button {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    .boxes:first-child {
+        border-radius: 0;
+    }
+
+    .boxes:last-child {
+        border-radius: 0;
+    }
+}
